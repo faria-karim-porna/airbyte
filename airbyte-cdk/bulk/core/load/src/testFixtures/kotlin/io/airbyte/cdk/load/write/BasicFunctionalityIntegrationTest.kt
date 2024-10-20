@@ -68,7 +68,7 @@ abstract class BasicFunctionalityIntegrationTest(
                         data = """{"id": 5678}""",
                         emittedAtMs = 1234,
                         changes =
-                            listOf(
+                            mutableListOf(
                                 DestinationRecord.Change(
                                     field = "foo",
                                     change = AirbyteRecordMessageMetaChange.Change.NULLED,
